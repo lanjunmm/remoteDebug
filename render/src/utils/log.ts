@@ -1,0 +1,5 @@
+export const _log = console.log.bind(null, '[Session player]')
+export const _warn = console.warn.bind(null, '[Session player]')
+export const _info = console.info.bind(null, '[Session player]')
+export const _debug = console.debug.bind(null, '[Session player]')
+export const _error = console.error.bind(null, '[Session player]')

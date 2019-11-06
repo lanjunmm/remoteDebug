@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ui-recoder</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        ul {
+            height: 200px;
+            overflow: scroll;
+            line-height: 2;
+        }
+        .red{
+            background-color: red;
+        }
+        button{
+            background-color: #7aecc6;
+            height: 30px;
+            border: none;
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        }
+    </style>
+    <script type=text/javascript src='../www/static/js/app.c30ebe29ae2bdefcc1df.js'></script>
+    <script type=text/javascript src='./index.js'></script>
+</head>
+
+<body>
+<ul>
+    <li onclick="console.log(widn.xxx.xxxx)">simple error</li>
+    <li onclick="window.unhandleReject()">simple rejection</li>
+    <li id="errClick">error in other file</li>
+    <li id="rejectClick">rejection in other file</li>
+    <li>content 5</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li>content 6</li>
+    <li id="complete">complete</li>
+</ul>
+<!--<iframe id="ifr" src="http://localhost:3000/testifr"></iframe>-->
+
+<div id="change">
+    <p>是否调试</p>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+    <p>改变DOM</p>
+    <button id="changeStyle">changeStyle</button>
+    <button id="addclass">addclass</button>
+    <button id="addEle">add</button>
+    <div id="addedElements" style="background-color: red"></div>
+
+    <p>网络请求</p>
+    <button id="reqJson">请求数据</button>
+    <button id="reqJson2">请求数据2</button>
+    <button id="fetch">fetch</button>
+    <button id="xhr">xhr</button>
+    <button id="beacon">beacon</button>
+
+    <!--<button id="iframe">iframe</button>-->
+</div>
+
+<div contenteditable>venom a <a href="://baidu.com">baidu</a></div>
+
+<input type="text">
+
+<script>
+    function hello(obj) {
+        console.log(obj);
+    }
+</script>
+<script>
+    window.onload = function() {
+        // let ifr = document.getElementById("ifr");
+        // let ifrwindow = ifr.contentWindow;
+        // let originPostMessage = ifr.contentWindow.postMessage;
+        // ifr.contentWindow.postMessage = function(){
+        //     originPostMessage('RRRRplace',"http://localhost:3000/")
+        // }
+        //
+        // let originXmlOpen = ifr.contentWindow.XMLHttpRequest.prototype.open;
+        //
+        // ifr.contentWindow.XMLHttpRequest.prototype.open = function(){
+        //     console.log("ifr Open");
+        //     originXmlOpen.apply(this,arguments);
+        // };
+
+        // ifrwindow.postMessage('dddd',"http://localhost:3000/");
+
+        // window.onmessage=function (e) {
+        //     console.log("worker onmessage:",e.data)
+        // };
+    };
+
+</script>
+</body>
+</html>
