@@ -1,11 +1,11 @@
 /** npm run dev 使用法*/
-// import Worker from '../src/index'
-// let worker = new Worker({mouse:{mousemove:true},iframe:false});
-// worker.start();
+import Worker from '../src/index'
+let worker = new Worker({mouse:{mousemove:true},iframe:false});
+worker.start();
 
 /** 打包后调用法：*/
-let worker = new window.worker();
-worker.start();
+// let worker = new window.worker();
+// worker.start();
 
 function testNetwork(){
     let url = 'http://www.mocky.io/v2/5ce3e1d231000062387429e5';
@@ -51,8 +51,8 @@ function start(){
     document.body.appendChild(p);
 
     document.getElementById('addEle').addEventListener('click', () => {
-        let p = document.createElement('p')
-        p.appendChild(document.createTextNode('加我一个！'))
+        let p = document.createElement('p');
+        p.appendChild(document.createTextNode('加我一个！'));
         document.getElementById('addedElements').appendChild(p)
     });
     // 发起Jsonp请求

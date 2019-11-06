@@ -136,17 +136,17 @@ function workerMsg(socket) {
 }
 
 function fetchReseponse(reseponseObj,resData) {
-    // if(reseponseObj!=null){
-    //     reseponseObj.status(resData.data.status);
-    //     reseponseObj.send(resData.data.body); //返回响应体
-    //     ReqMap.set(resData.reqId,null);
-    // }
-    //模拟失败请求
     if(reseponseObj!=null){
-        reseponseObj.status(408);
-        reseponseObj.send('A Moke Request From Mocky'); //返回响应体
+        reseponseObj.status(resData.data.status);
+        reseponseObj.send(resData.data.body); //返回响应体
         ReqMap.set(resData.reqId,null);
     }
+    //模拟失败请求
+    // if(reseponseObj!=null){
+    //     reseponseObj.status(408);
+    //     reseponseObj.send('A Moke Request From Mocky'); //返回响应体
+    //     ReqMap.set(resData.reqId,null);
+    // }
 }
 function xhrReseponse(reseponseObj,resData) {
     if(reseponseObj!=null){

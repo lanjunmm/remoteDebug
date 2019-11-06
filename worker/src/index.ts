@@ -85,6 +85,6 @@ export default class Worker implements WORKER{
 }
 
 /** 打包留出全局接口：*/
-window['worker'] = function () {
-    return new Worker();
-};
+// window['worker'] = function () {
+//     return new Worker();
+// };
