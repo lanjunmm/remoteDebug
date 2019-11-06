@@ -17,5 +17,5 @@ export default class Render {
     }
 }
 /** 打包留出全局接口：*/
-window['render'] = new Render();
+// window['render'] = new Render();
 
